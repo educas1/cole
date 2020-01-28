@@ -15,9 +15,18 @@
 			line-height:80px;
 			text-align:center;
 			z-index:999;
+
+
 	}
-			
+			#idm{
+position: absolute;
+top: 0%;
+left: 0%;
+
+z-index: -122;
+			}
 			</style>
+		
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -558,6 +567,28 @@
             <a href="https://wa.me/573229375628?text=Me%20gustaría%20saber%20el%20por%20los%20cursos" target="_blank">
             <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="">
             </a>
-            </div>   
+			</div>   
+			
+	
+			
+			<audio autoplay id="myAudio">
+				<source src="edu.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			  </audio>
+
+			  
+			  <script >
+		var xy = document.getElementById("myAudio"); 
+console.log(xy);
+function playAudio() { 
+
+  xy.play(); 
+} 
+
+function pauseAudio() { 
+  xy.pause(); 
+} setTimeout(function(){playAudio();},1000);
+			  </script>
+
 	</body>
 </html>
