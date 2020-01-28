@@ -54,7 +54,7 @@ z-index: -122;
 		<![endif]-->
 
     </head>
-	<body>
+	<body onload="fonlo();">
 
 		<!-- Header -->
 		<header id="header" class="transparent-nav">
@@ -589,8 +589,17 @@ function playAudio() {
 
 function pauseAudio() { 
   xy.pause(); 
-} setTimeout(function(){playAudio();},4000);
-			  </script>
+} 
+		
+		function fonlo(){
+			setTimeout(function(){playAudio();},4000);
+
+		}
+		
+		
+		
+		
+		</script>
 
 	</body>
 </html>
